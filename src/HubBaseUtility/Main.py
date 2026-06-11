@@ -19,12 +19,19 @@ def Programm1():
 
 
 def Programm2():
-    pass
+    print("Calculator")
+    Num = input("First number -- ")
+    Num2 = input("Second number -- ")
+    Opr = input("Operator -- ")
+    try:
+        print(eval(Num+Opr+Num2))
+    except:
+        print("Please input a valid equation.")
 
 
-__version__ = "0.0.0.0.20"
-ProgrammNumber = 1
-programmList = {1: Programm1}
+__version__ = "0.0.0.0.30"
+ProgrammNumber = 2
+programmList = {1: Programm1, 2: Programm2}
 
 
 def Showcase():
