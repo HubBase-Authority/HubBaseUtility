@@ -1,15 +1,39 @@
-def Programm1():
+import time
+
+
+def Programm0():
     print("Hello world")
 
-__version__ = "0.0.1.0.00"
-import time
-ProgrammNumber = 19
-programmList = {1: Programm1()}
+
+def Programm1():
+    Value = input("Enter a word or Number -- ")
+    try:
+        float(Value)
+        try:
+            int(Value)
+            print("That is an integer")
+        except ValueError:
+            print("That is a decimal")
+    except ValueError:
+        print("That is a string")
+
+
+def Programm2():
+    pass
+
+
+__version__ = "0.0.0.0.11"
+ProgrammNumber = 1
+programmList = {1: Programm1}
+
+
 def Showcase():
     print(f"HubBase Utility {__version__} programm showcase - {ProgrammNumber} programms")
-    for programm in range(1, ProgrammNumber+1):
+    for programm in range(1, ProgrammNumber + 1):
         print(f"Programm №{programm} launching")
         time.sleep(1)
-        programmList[programm]
-
-Showcase()
+        try:
+            programmList[programm]()
+        except KeyError:
+            print(f"KeyError: Key {programm} is out of reach")
+            break
