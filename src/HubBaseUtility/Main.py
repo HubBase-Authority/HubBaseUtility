@@ -29,14 +29,14 @@ def ProgrammU2():
         print("Please input a valid equation.")
 
 
-__version__ = "0.0.0.0.40"
+__version__ = "0.0.0.0.41"
 programList = {1: ProgrammU1, 2: ProgrammU2}
 ProgramNumber = len(programList.keys())
 
 
 def Showcase():
     print(f"HubBase Utility {__version__} programm showcase - {ProgramNumber} programms")
-    ProgrammCycle(programList, time.sleep, [1])
+    ProgramCycle(programList, time.sleep, [1])
 
 
 def ProgramCycle(programmList: dict, TransitionMethod, TransitionMethodargs: list):
