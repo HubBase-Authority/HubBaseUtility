@@ -29,7 +29,7 @@ def ProgrammU2():
         print("Please input a valid equation.")
 
 
-__version__ = "0.0.0.0.41"
+__version__ = "0.0.0.0.42"
 programList = {1: ProgrammU1, 2: ProgrammU2}
 ProgramNumber = len(programList.keys())
 
@@ -47,6 +47,8 @@ def ProgramCycle(programmList: dict, TransitionMethod, TransitionMethodargs: lis
             success = TransitionMethod(*TransitionMethodargs)
             if success:
                 continue
+            elif success is None:
+                print(f"Warning: {TransitionMethod} does not return anything. Assuming None as True.")
             else:
                 break
         except KeyError:
