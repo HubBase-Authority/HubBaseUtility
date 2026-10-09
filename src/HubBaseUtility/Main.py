@@ -1,6 +1,6 @@
 from . import all_programs
 from .Programs.Manager import Program
-__version__ = "0.0.0.1.00"
+__version__ = "0.0.0.1.01"
 
 
 def main():
