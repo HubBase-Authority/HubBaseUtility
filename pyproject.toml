@@ -1,0 +1,25 @@
+[project]
+name = "HubBaseUtility"
+version = "0.0.0.1.0.0.post1"
+authors = [
+    { name = "Voice659", email = "E.R.Fahretdinov@yandex.ru" },
+]
+description = "HubBaseUtility – Utility programms!!"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/HubBase-Authority/HubBaseUtility"
+Issues = "https://github.com/HubBase-Authority/HubBaseUtility/issues"
+Documentation = "https://github.com/HubBase-Authority/HubBaseUtility/wiki"
+Webpage = "https://voice659.github.io/index-pr-hbut.html"
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
